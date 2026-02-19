@@ -1,0 +1,86 @@
+﻿body{
+margin:0;
+font-family:Arial;
+overflow-x:hidden;
+background:#ffe4ec;
+text-align:center;
+}
+
+/* INTRO */
+#intro{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+background:pink;
+color:white;
+}
+
+button{
+padding:15px 30px;
+font-size:20px;
+border:none;
+border-radius:25px;
+background:white;
+color:pink;
+cursor:pointer;
+}
+
+/* FLOATING HEARTS */
+.hearts::before{
+content:"💗 💕 💖 💘 💞";
+position:absolute;
+font-size:40px;
+animation:float 6s infinite linear;
+}
+
+@keyframes float{
+0%{transform:translateY(100vh);}
+100%{transform:translateY(-100vh);}
+}
+
+/* PLANE */
+#plane{
+position:fixed;
+left:-100px;
+top:40%;
+font-size:50px;
+transition:3s;
+}
+
+/* LOVE TEXT */
+.bigText{
+font-size:60px;
+font-weight:bold;
+padding:100px;
+}
+
+/* JOURNEY */
+.zig{
+display:flex;
+align-items:center;
+padding:40px;
+}
+
+.left{flex-direction:row;}
+.right{flex-direction:row-reverse;}
+
+img{
+width:250px;
+border-radius:15px;
+}
+
+/* VIDEO */
+video{
+width:80%;
+border-radius:20px;
+}
+
+/* SWIPE */
+#secret{
+opacity:0;
+transition:1s;
+font-size:25px;
+padding:40px;
+}
